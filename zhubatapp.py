@@ -31,10 +31,13 @@ def milo():
     return render_template("/photos/milo.html")
 
     
-
 @app.route('/projects')
 def blog():
     return render_template("projects.html")
+
+@app.route('/quotes')
+def quotes():
+    return render_template("quotes.html")
 
 @app.route('/login')
 def login():
@@ -46,9 +49,5 @@ def login():
     return redirect('https://zhubat.uqcloud.net')
 
  
-@app.route('/rngwars')
-def rngwars():
-    return render_template("projects.html")
-
-
-
+if __name__ == '__main__':
+    app.run()
