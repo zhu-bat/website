@@ -35,9 +35,9 @@ def milo():
 def blog():
     return render_template("projects.html")
 
-@app.route('/quotes')
-def quotes():
-    return render_template("quotes.html")
+@app.route('/words')
+def words():
+    return render_template("words.html")
 
 @app.route('/login')
 def login():
