@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="title">greeting</h1>
+
+<main class="contents">
+    <p>herro welcome to website</p>   
+    <img src="{{ url_for('static', filename='tumbleweed.png') }}" alt="Tumbleweed">
+</main>    
+
+{% endblock %}

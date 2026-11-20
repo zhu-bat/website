@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zhubat</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='base/zubat.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_head %}{% endblock extra_head %}
+<head>	
+
+<body>
+
+<header class="banner">
+    <a href="/" class="logo">
+        <img src="{{ url_for('static', filename='base/zubat.png') }}" alt="Zubat"> 
+        <h1 style="color:#48719a;margin-left:20px;">zhu</h1>
+        <h1 style="color:#a34a9e">bat</h1>
+    </a>
+
+    <div class="buttons">
+        <a href="/contact" class="button">contact</a>
+        <a href="https://api.uqcloud.net/auth/consent/https://zhubat.uqcloud.net/" class="button">login</a>
+    </div>
+</header>
+
+<ul>
+    <li class="dropdown">
+      <a href="/drawings" class="dropbtn">drawings</a>
+        <div class="dropdown-content">
+          <a href="#">2026</a>
+          <a href="#">2025</a>
+          <a href="#">2024</a>
+        </div>  
+    </li>
+      
+    <li class="dropdown">
+      <a href="/photos" class="dropbtn">photos</a>
+        <div class="dropdown-content">
+          <a href="/photos/milo">milo</a>
+          <a href="#">laying beanie animal</a>
+        </div>  
+    </li>
+
+    <li class="dropdown">
+      <a href="/projects" class="dropbtn">projects</a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+    </li>
+
+</ul>
+
+{% block content %}{% endblock %}
+
+<footer class="footer">
+    <img src="{{ url_for('static', filename='base/foot.png') }}" alt="Foot">
+    <img src="{{ url_for('static', filename='base/foot.png') }}" alt="Foot">
+    <img src="{{ url_for('static', filename='base/foot.png') }}" alt="Foot">
+    <img src="{{ url_for('static', filename='base/foot.png') }}" alt="Foot">
+    <img src="{{ url_for('static', filename='base/foot.png') }}" alt="Foot">
+</footer>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/photos.css') }}">
+{% endblock extra_head %}
+
+{% block content %}
+
+<h1 class="title">meet milo!</h1>
+
+<main class=contents>
+  
+
+    <div style="display:flex;flex-direction:row;">
+
+        <div style="display:flex;flex-direction:column;">
+        
+        <div class="photo-grid">
+            <img src="{{ url_for('static', filename='photos/milo/milo0.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='photos/milo/milo1.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='photos/milo/milo2.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='photos/milo/milo3.jpg') }}" alt="">
+        </div>
+
+        <div style="display:flex;align-items:row">
+            <p>milo photoshoot</p>
+            <p style="margin-left:auto">04.08.2026&nbsp;&nbsp;&nbsp;&nbsp;18:05</p>
+            
+        </div>
+        </div>
+
+        <div style="margin-left:auto;display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:row">
+                
+                <p>22.07.2026</p>
+                <p style="margin-left:auto">18:04</p>
+            </div>
+           <img style="width:445px;margin-left:auto;" src="{{ url_for('static', filename='photos/milo/milo4.jpg') }}" alt="">
+
+            <p>here he is, sitting on my crusty ass hand</p>
+        </div>
+
+
+    </div>
+
+    <br>
+
+    <div style="display:flex;flex-direction:column;">
+
+
+        <div style="display:flex;flex-direction:row;margin-top:50px">
+        
+            <img style="width:350px;" src="{{ url_for('static', filename='photos/milo/rat.jpg') }}" alt="rat">
+            <img style="width:350px;margin-left:10px;" src="{{ url_for('static', filename='photos/milo/rat1.jpg') }}" alt="rat">
+            <img style="width:350px;margin-left:10px;" src="{{ url_for('static', filename='photos/milo/rat2.jpg') }}" alt="rat">
+        </div>
+        <div style="display:flex;align-items:row">
+            <p>nah who the fuck is this vro i'm so scared</p>
+            <p style="margin-left:410px;">22.07.2026&nbsp;&nbsp;&nbsp;&nbsp;18:04</p>
+        </div>
+    </div>
+
+
+    <div style="display:flex;flex-direction:column;margin-top:50px;width:710px;">
+
+        <div style="display:flex;align-items:row;">
+            <p>06.03.2026</p>
+            <p style="margin-left:auto;">15:17</p>
+        </div>
+
+        <div style="display:flex;flex-direction:row;">
+        
+            <img style="width:350px;" src="{{ url_for('static', filename='photos/milo/milo5.jpg') }}" alt="rat">
+            <img style="width:350px;margin-left:10px;" src="{{ url_for('static', filename='photos/milo/milo6.jpg') }}" alt="rat">
+        </div>
+        <p>milo with milo owner</p> 
+    </div>
+     
+
+</main>
+{% endblock %}

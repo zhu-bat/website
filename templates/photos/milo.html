@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slideshow.css') }}">
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script> 
+{% endblock extra_head %}
+
+{% block content %}
+
+<h1 class="title">meet milo!</h1>
+
+<div class="slideshow">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <div class="slide" style="display:block;">
+    <div class="numbertext">1 / 4</div>
+    
+    <img src="{{ url_for('static', filename='photos/milo/milo0.jpg') }}" alt="">
+        
+  </div>
+
+  <div class="slide">
+    <div class="numbertext">2 / 4</div>
+    <img src="{{ url_for('static', filename='photos/milo/milo3.jpg') }}" alt="">
+  </div>
+  <div class="slide">
+    <div class="numbertext">3 / 4</div>
+    
+    <img src="{{ url_for('static', filename='photos/milo/milo1.jpg') }}" alt="">
+  </div>
+
+  <div class="slide">
+    <div class="numbertext">4 / 4</div>
+    
+    <img src="{{ url_for('static', filename='photos/milo/milo2.jpg') }}" alt="">
+  </div>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+
+
+
+{% endblock %}
