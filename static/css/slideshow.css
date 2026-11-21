@@ -8,31 +8,53 @@
 
 .slide {
   display: none;
+}
 
+.slide.active {
+  display:block;
 }
 
 .slide img {
-  width:400px;
-  height:400px;
   animation-name: slide-animation;
   animation-duration: 0.25s;
   animation-fill-mode: both;
 }
 
-.prev, .next {
+/* Photo sizes */
+
+.slideshow.spin .slide img {
+  width:400px;
+  height:400px;
+}
+
+.slideshow.rat .slide img {
+  width:400px;
+  height:533px;
+}
+
+.slideshow button {
+  background:none;
+  color: #77bbff;
   cursor: pointer;
   top: 50%;
   margin-top: -22px;
   padding: 16px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  border:none;
+}
+
+.slideshow button:active {
+    color: black;
 }
 
 
-.prev:hover, .next:hover {
+.slideshow button:hover {
   background-color: rgba(0,0,0,0.8);
+  color: #ff91fa;
+  transition-duration: 0.2s;
 }
 
 

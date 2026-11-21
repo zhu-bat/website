@@ -9,33 +9,64 @@
 
 <h1 class="title">meet milo!</h1>
 
-<div class="slideshow">
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <div class="slide" style="display:block;">
-    <div class="numbertext">1 / 4</div>
-    
-    <img src="{{ url_for('static', filename='photos/milo/milo0.jpg') }}" alt="">
-        
-  </div>
 
-  <div class="slide">
-    <div class="numbertext">2 / 4</div>
-    <img src="{{ url_for('static', filename='photos/milo/milo3.jpg') }}" alt="">
-  </div>
-  <div class="slide">
-    <div class="numbertext">3 / 4</div>
-    
-    <img src="{{ url_for('static', filename='photos/milo/milo1.jpg') }}" alt="">
-  </div>
+<main class="contents">
 
-  <div class="slide">
-    <div class="numbertext">4 / 4</div>
-    
-    <img src="{{ url_for('static', filename='photos/milo/milo2.jpg') }}" alt="">
-  </div>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+  <!-- Milo spin -->
+  <div class="slideshow spin">
+    <button class="prev">&#10094;</button>
 
+    <div class="slide">
+      <div class="numbertext">1 / 4</div>
+      <img src="{{ url_for('static', filename='photos/milo/milo0.jpg') }}" alt="">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">2 / 4</div>
+      <img src="{{ url_for('static', filename='photos/milo/milo3.jpg') }}" alt="">
+    </div>
+    <div class="slide">
+      <div class="numbertext">3 / 4</div>
+      
+      <img src="{{ url_for('static', filename='photos/milo/milo1.jpg') }}" alt="">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">4 / 4</div>
+      
+      <img src="{{ url_for('static', filename='photos/milo/milo2.jpg') }}" alt="">
+    </div>
+    <button class="next">&#10095;</button>
+  </div>
+  <div class="text">Milo spin!</div>
+   <!-- Milo spin -->
+
+
+    <!-- Rat -->
+  <div class="slideshow rat">
+    <button class="prev">&#10094;</button>
+
+    <div class="slide">
+      <div class="numbertext">1 / 3</div>
+      <img src="{{ url_for('static', filename='photos/milo/rat.jpg') }}" alt="">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">2 / 3</div>
+      <img src="{{ url_for('static', filename='photos/milo/rat1.jpg') }}" alt="">
+    </div>
+    <div class="slide">
+      <div class="numbertext">3 / 3</div>
+      
+      <img src="{{ url_for('static', filename='photos/milo/rat2.jpg') }}" alt="">
+    </div>
+    <button class="next">&#10095;</button>
+  </div>
+  <div class="text">Nah who the fuck is this vro i'm so scared</div>
+   <!-- Rat -->
+
+
+</main>
 
 
 
