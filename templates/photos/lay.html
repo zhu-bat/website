@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script> 
+{% endblock extra_head %}
+
+{% block content %}
+
+<h1 class="title">lay</h1>
+
+
+<main class="contents">    
+
+<!-- The og -->
+  <div class="slideshow three-by-four-landscape">
+    <button class="prev">&#10094;</button>
+
+    <div class="slide">
+      <div class="numbertext">1 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/photos/lay/og0.jpg') }}" alt="lay">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">2 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/photos/lay/og1.jpg') }}" alt="lay">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">3 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/photos/lay/og2.jpg') }}" alt="lay">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">4 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/photos/lay/og3.jpg') }}" alt="lay">
+    </div>
+    
+    <button class="next">&#10095;</button>
+  </div>
+  <div class="text">The OG</div>
+<!-- The og -->
+
+<!-- Cluster -->
+  <div class="slideshow three-by-five-landscape">
+    <button class="prev">&#10094;</button>
+
+    <div class="slide">
+      <div class="numbertext">1 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/photos/lay/cluster0.jpg') }}" alt="lay">
+      <div class="text">Cluster - thirteen</div>
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">2 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/photos/lay/cluster1.jpg') }}" alt="lay">
+      <div class="text">Cluster - fourteen</div>
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">3 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/photos/lay/cluster2.jpg') }}" alt="lay">
+      <div class="text">Cluster - fifteen</div>
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">4 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/photos/lay/cluster3.jpg') }}" alt="lay">
+      <div class="text">Cluster - seventeen</div>
+    </div>
+    
+    <button class="next">&#10095;</button>
+  </div>
+
+<!-- Cluster -->
+
+
+</main>
+
+
+{% endblock %}

@@ -30,6 +30,10 @@ def photos():
 def milo():
     return render_template("/photos/milo.html")
 
+@app.route('/photos/lay')
+def lay():
+    return render_template("/photos/lay.html")
+
     
 @app.route('/projects')
 def blog():

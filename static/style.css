@@ -220,7 +220,12 @@ h1 {
     font-size: 72px;
     font-weight: normal;
     text-align: center;
+}
 
+
+h2 {
+    font-size: 48px;
+    font-weight: normal;
 }
 
 p {
@@ -308,6 +313,15 @@ p {
   height:533px;
 }
 
+.slideshow.three-by-four-landscape .slide img {
+  width:533px;
+  height:400px;
+}
+
+.slideshow.three-by-five-landscape .slide img {
+  width:677px;
+  height:400px;
+}
 
 
 /* ts below is chopped */
