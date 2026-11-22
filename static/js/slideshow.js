@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = container.querySelectorAll('.slide');
     const prevBtn = container.querySelector('.prev');
     const nextBtn = container.querySelector('.next');
-    let currentIndex = 0;
+    let currentIndex;
 
     function showSlide(index) {
 
@@ -40,8 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
     nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+    
+    if (container.classList.contains('drawing')) {
+      currentIndex = slides.length - 1;
 
-    showSlide(0);
+    } else {
+      currentIndex = 0;
+    }
+
+    showSlide(currentIndex);
+    
   });
 
 });

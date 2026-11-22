@@ -15,10 +15,19 @@ def foobar():
 def contact():
     return render_template("contact.html")
 
+
+# Drawings
 @app.route('/drawings')
 def drawings():
-    return render_template("drawings.html")
+    return render_template("/drawings/drawings.html")
 
+@app.route('/drawings/digital')
+def digital():
+    return render_template("/drawings/digital.html")
+
+@app.route('/drawings/traditional')
+def traditional():
+    return render_template("/drawings/traditional.html")
 
 # Photos
 

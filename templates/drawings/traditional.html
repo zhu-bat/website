@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+
+
+{% block extra_head %}
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script> 
+{% endblock extra_head %}
+
+
+{% block content %}
+
+<h1 class="title">pen n pencil</h1>
+
+<main class=contents>
+
+
+<h2>2026</h2>    
+
+<p>nothing....</p>
+
+<h2>2025</h2>
+
+  <div class="slideshow drawing three-by-four-portrait">
+    <button class="prev">&#10094;</button>
+      <div class="slide">
+        <div class="numbertext">Reference photo</div>
+        <img src="{{ url_for('static', filename='pictures/drawings/traditional/falkor/falkor_ref.png') }}" alt="falkor">
+      </div>
+      <div class="slide">
+        <div class="numbertext">1 / 6</div>
+        <img src="{{ url_for('static', filename='pictures/drawings/traditional/falkor/falkor0.jpg') }}" alt="falkor">
+      </div>
+      <div class="slide">
+        <div class="numbertext">2 / 6</div>
+        <img src="{{ url_for('static', filename='pictures/drawings/traditional/falkor/falkor1.jpg') }}" alt="falkor">
+      </div>
+      <div class="slide">
+        <div class="numbertext">3 / 6</div>
+        <img src="{{ url_for('static', filename='pictures/drawings/traditional/falkor/falkor2.jpg') }}" alt="falkor">
+      </div>
+      <div class="slide">
+        <div class="numbertext">4 / 6</div>
+        <img src="{{ url_for('static', filename='pictures/drawings/traditional/falkor/falkor3.jpg') }}" alt="falkor">
+      </div>
+      <div class="slide">
+        <div class="numbertext">5 / 6</div>
+        <img src="{{ url_for('static', filename='pictures/drawings/traditional/falkor/falkor4.jpg') }}" alt="falkor">
+      </div>
+      <div class="slide">
+        <div class="numbertext">6 / 6</div>
+        <img src="{{ url_for('static', filename='pictures/drawings/traditional/falkor/falkor5.jpg') }}" alt="falkor">
+      </div>
+
+    <button class="next">&#10095;</button>
+  </div>
+  <div class="text">falkor - 14.07.2025</div>
+
+  <br>
+
+  <!-- steve -->
+  <div class="slideshow drawing square">
+    <button class="prev">&#10094;</button>
+        
+    <div class="slide">
+      <div class="numbertext">Reference photo</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/steve/steve_ref.jpg') }}" alt="steve">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">1 / 6</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/steve/steve0.jpg') }}" alt="steve">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">2 / 6</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/steve/steve1.jpg') }}" alt="steve">
+    </div>
+    <div class="slide">
+      <div class="numbertext">3 / 6</div>
+      
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/steve/steve2.jpg') }}" alt="steve">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">4 / 6</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/steve/steve3.jpg') }}" alt="steve">
+    </div>
+
+
+    <div class="slide">
+      <div class="numbertext">5 / 6</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/steve/steve4.jpg') }}" alt="steve">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">6 / 6</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/steve/steve5.jpg') }}" alt="steve">
+    </div>
+
+    <button class="next">&#10095;</button>
+  </div>
+  <div class="text">minecraft steve - 27.04.2025</div>
+<!-- Steve -->
+
+<br>
+  <!-- Mpreg -->
+  <div class="slideshow drawing three-by-four-portrait">
+    <button class="prev">&#10094;</button>
+        
+    <div class="slide">
+      <div class="numbertext">Reference photo</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/mpreg/mpreg_ref.jpg') }}" alt="mpreg">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">1 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/mpreg/mpreg0.jpg') }}" alt="mpreg">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">2 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/mpreg/mpreg1.jpg') }}" alt="mpreg">
+    </div>
+    <div class="slide">
+      <div class="numbertext">3 / 4</div>
+      
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/mpreg/mpreg2.jpg') }}" alt="mpreg">
+    </div>
+
+    <div class="slide">
+      <div class="numbertext">4 / 4</div>
+      <img src="{{ url_for('static', filename='pictures/drawings/traditional/mpreg/mpreg3.jpg') }}" alt="mpreg">
+    </div>
+
+    <button class="next">&#10095;</button>
+  </div>
+  <div class="text">mpreg - 26.01.2025</div>
+<!-- Mpreg -->
+
+
+{% endblock %}

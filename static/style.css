@@ -284,7 +284,7 @@ p {
 
 
 .text {
-  font-size: 15px;
+  font-size: 18px;
   padding: 8px 12px;
   bottom: 8px;
   width: 100%;
@@ -293,6 +293,11 @@ p {
 
 .numbertext {
   font-size: 12px;
+  padding: 8px 12px;
+}
+
+.drawing .numbertext{
+  font-size: 18px;
   padding: 8px 12px;
 }
 
