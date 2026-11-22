@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block extra_head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/slideshow.css') }}">
     <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script> 
 {% endblock extra_head %}
 
@@ -13,28 +12,28 @@
 <main class="contents">
 
   <!-- Milo spin -->
-  <div class="slideshow spin">
+  <div class="slideshow square">
     <button class="prev">&#10094;</button>
 
     <div class="slide">
       <div class="numbertext">1 / 4</div>
-      <img src="{{ url_for('static', filename='photos/milo/milo0.jpg') }}" alt="">
+      <img src="{{ url_for('static', filename='pictures/photos/milo/milo0.jpg') }}" alt="milo">
     </div>
 
     <div class="slide">
       <div class="numbertext">2 / 4</div>
-      <img src="{{ url_for('static', filename='photos/milo/milo3.jpg') }}" alt="">
+      <img src="{{ url_for('static', filename='pictures/photos/milo/milo3.jpg') }}" alt="milo">
     </div>
     <div class="slide">
       <div class="numbertext">3 / 4</div>
       
-      <img src="{{ url_for('static', filename='photos/milo/milo1.jpg') }}" alt="">
+      <img src="{{ url_for('static', filename='pictures/photos/milo/milo1.jpg') }}" alt="milo">
     </div>
 
     <div class="slide">
       <div class="numbertext">4 / 4</div>
       
-      <img src="{{ url_for('static', filename='photos/milo/milo2.jpg') }}" alt="">
+      <img src="{{ url_for('static', filename='pictures/photos/milo/milo2.jpg') }}" alt="milo">
     </div>
     <button class="next">&#10095;</button>
   </div>
@@ -43,22 +42,22 @@
 
 
     <!-- Rat -->
-  <div class="slideshow rat">
+  <div class="slideshow three-by-four-portrait">
     <button class="prev">&#10094;</button>
 
     <div class="slide">
       <div class="numbertext">1 / 3</div>
-      <img src="{{ url_for('static', filename='photos/milo/rat.jpg') }}" alt="">
+      <img src="{{ url_for('static', filename='pictures/photos/milo/rat.jpg') }}" alt="rat">
     </div>
 
     <div class="slide">
       <div class="numbertext">2 / 3</div>
-      <img src="{{ url_for('static', filename='photos/milo/rat1.jpg') }}" alt="">
+      <img src="{{ url_for('static', filename='pictures/photos/milo/rat1.jpg') }}" alt="rat">
     </div>
     <div class="slide">
       <div class="numbertext">3 / 3</div>
       
-      <img src="{{ url_for('static', filename='photos/milo/rat2.jpg') }}" alt="">
+      <img src="{{ url_for('static', filename='pictures/photos/milo/rat2.jpg') }}" alt="rat">
     </div>
     <button class="next">&#10095;</button>
   </div>

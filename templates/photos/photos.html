@@ -1,9 +1,5 @@
 {% extends "base.html" %}
 
-{% block extra_head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/photos.css') }}">
-{% endblock extra_head %}
-
 {% block content %}
 
 <h1 class="title">moments in time!</h1>
@@ -11,12 +7,12 @@
 <main class=contents>
     <div class = "photo-row">
         <a href="/photos/milo" class="photo-button">
-            <img src="{{ url_for('static', filename='photos/milo/milo4.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='pictures/photos/milo/milo4.jpg') }}" alt="milo">
             <p>milo photos</p>
         </a>
 
         <a href="#" class="photo-button">    
-            <img src="{{ url_for('static', filename='photos/lay/godzilla.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='pictures/photos/lay/godzilla.jpg') }}" alt="lay">
             <p>laying beanie animal</p>
         </a>
     </div>
