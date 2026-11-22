@@ -226,6 +226,12 @@ h1 {
 h2 {
     font-size: 48px;
     font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
 }
 
 p {
@@ -326,6 +332,12 @@ p {
 .slideshow.three-by-five-landscape .slide img {
   width:677px;
   height:400px;
+}
+
+
+.slideshow.four-by-five-portrait .slide img {
+  width:400px;
+  height:500px;
 }
 
 
