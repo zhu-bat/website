@@ -314,17 +314,17 @@ p {
 
 
 /* Photo sizes */
-.slideshow.square .slide img {
+.square img {
   width:400px;
   height:400px;
 }
 
-.slideshow.three-by-four-portrait .slide img {
+.three-by-four-portrait img {
   width:400px;
   height:533px;
 }
 
-.slideshow.three-by-four-landscape .slide img {
+.three-by-four-landscape img {
   width:533px;
   height:400px;
 }
@@ -335,11 +335,25 @@ p {
 }
 
 
-.slideshow.four-by-five-portrait .slide img {
+.four-by-five-portrait img {
   width:400px;
   height:500px;
 }
 
+
+.four-by-five-landscape img {
+  width:500px;
+  height:400px;
+}
+
+
+/* Container for a single slide */
+.single-slide {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
 
 /* ts below is chopped */
 .photo-row {
